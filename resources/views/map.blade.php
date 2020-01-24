@@ -9,6 +9,8 @@ use Spatie\Geocoder\Facades\Geocoder;
             <label for="myPlaceTextBox">Uw plaats: </label>
             <input type="text" name="myPlaceTextBox" id="myPlaceTextBox">
         </div>
+{{--        genereerd de html van de map --}}
+{{--        de js word gegenereed in de layouts.blade.php --}}
         <div class="container" id="mapper">
             <?=$map['html']?>
         </div>
@@ -17,11 +19,5 @@ use Spatie\Geocoder\Facades\Geocoder;
         </div>
     </div>
     <script>
-        sessionStorage.setItem('myPlace', document.getElementById('myPlaceTextBox').value);
-
-        function form_submit() {
-
-        }
-
     </script>
 @stop

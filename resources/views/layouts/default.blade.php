@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <!-- map -->
+    <!-- google map -->
     <script type="text/javascript">
         var centreGot = false;
     </script>
