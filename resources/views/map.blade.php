@@ -1,5 +1,6 @@
 <?php
-session_start()
+session_start();
+use Spatie\Geocoder\Facades\Geocoder;
 ?>
 @extends('layouts.default')
 @section('content')
@@ -20,14 +21,6 @@ session_start()
 
         function form_submit() {
 
-            // sessionStorage.setItem('myPlace', document.getElementById('myPlaceTextBox').value);
-            // console.log(navigator.geolocation.getCurrentPosition(showPosition));
-            // console.log(sessionStorage);
-            console.log('<?php ?>')
-
-            // function showPosition(position) {
-            //     console.log(position.coords.latitude)
-            // }
         }
 
     </script>
